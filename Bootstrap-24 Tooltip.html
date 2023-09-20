@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Bootstrap-5
+</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script type="text/javascript" src="js/Popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Icons/All.js"></script>
+<link rel="stylesheet" type="text/css" href="Icons/All.css">
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})	
+var exampleEl = document.getElementById('example')
+var tooltip = new bootstrap.Tooltip(exampleEl, options)
+</script>
+</head>
+<body>
+<div class="container">
+<center>
+<h3>
+Example Of Alert Tool Tip In Bootstrap
+</h3>
+<hr>
+<div class="container">
+<div class="row">
+<div class="col-md-6 offset-3">
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button></div>
+</div>
+</center>
+</body>
+</html>
+
